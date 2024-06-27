@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .form-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #6b46c1;
+    box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .hidden-file-input {
+    display: none;
+  }
+  
+  .file-label {
+    padding: 8px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .file-label:hover {
+    transform: scale(1.05);
+  }
+  
+  .submit-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .link {
+    color: #e74c3c;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 16px;
+  }
+  

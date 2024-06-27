@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="cta">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    
+    <section id="home" class="hero">
+        <img src="../assets/background.jpg" alt="">
+        <div class="hero-content">
+            <h1>A Taste of Italy in the Heart of the City</h1>
+            <p>Authentic Italian Cuisine | Farm-to-Table Ingredients | Cozy Atmosphere</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>Our story and mission...</p>
+        <div class="chef">
+            <img src="../assets/chef.jpg" alt="Chef">
+            <h3>Chef's Name</h3>
+            <p>Short bio of the chef...</p>
+        </div>
+        <div class="chef">
+            <img src="../assets/chef1.jpg" alt="Chef">
+            <h3>Chef's Name</h3>
+            <p>Short bio of the chef...</p>
+        </div>
+        <div class="chef">
+            <img src="../assets/chef1.jpg" alt="Chef">
+            <h3>Chef's Name</h3>
+            <p>Short bio of the chef...</p>
+        </div>
+
+        <div class="chef">
+            <img src="../assets/chef1.jpg" alt="Chef">
+            <h3>Chef's Name</h3>
+            <p>Short bio of the chef...</p>
+        </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section id="menu" class="menu-highlights">
+        <h2>Menu Highlights</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="../assets/dish1.jpg" alt="Dish 1">
+                <h3>Dish Name</h3>
+                <p>Description of the dish...</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="../assets/dish2.jpg" alt="Dish 2">
+                <h3>Dish Name</h3>
+                <p>Description of the dish...</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="../assets/dish3.jpg" alt="Dish 3">
+                <h3>Dish Name</h3>
+                <p>Description of the dish...</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="../assets/dish4.jpg" alt="Dish 4">
+                <h3>Dish Name</h3>
+                <p>Description of the dish...</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="../assets/dish5.jpg" alt="Dish 5">
+                <h3>Dish Name</h3>
+                <p>Description of the dish...</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="../assets/dish6.jpg" alt="Dish 6">
+                <h3>Dish Name</h3>
+                <p>Description of the dish...</p>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="photo-gallery">
+            <img src="../assets/photo1.jpg" alt="Gallery Photo 1">
+            <img src="../assets/photo2.jpg" alt="Gallery Photo 2">
+            <img src="../assets/photo3.jpg" alt="Gallery Photo 3">
+            <img src="../assets/photo4.jpg" alt="Gallery Photo 4">
+            <img src="../assets/photo5.jpg" alt="Gallery Photo 5">
+            <img src="../assets/photo6.jpg" alt="Gallery Photo 6">
+            
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+ 
+
+    <!-- Location and Hours Section -->
+    <section id="contact" class="location-hours">
+        <h2>Find Us</h2>
+        <div class="map">
+            <!-- Embed Google Map -->
+        </div>
+        <div class="contact-info">
+            <p>123 Main Street, City, Country</p>
+            <p>Open: Mon-Sun, 11 AM - 10 PM</p>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <h2>Reserve a Table</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="date" name="date" placeholder="Date" required>
+            <input type="time" name="time" placeholder="Time" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <button id="submit" type="submit">Book Now</button>
+        </form>
+    </section>
+
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <ul class="quick-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            alert('Your table has been reserved!'); // Show the alert message
+        });
+    </script>
+
+</body>
+</html>

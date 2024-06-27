@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="register.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/background.jpg" alt="" class="background-image">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <span class="title">Restaurant</span>
+                <br />
+                <span class="subtitle">Register</span>
+            </div>
+            <form class="form-content">
+                <input 
+                    type="text" 
+                    placeholder="Name"
+                    required
+                    name="name"
+                    id="name" 
+                    class="input-field"
+                />
+                <input 
+                    type="email" 
+                    placeholder="Email"
+                    name="email"
+                    id="email" 
+                    class="input-field"
+                    required
+                />
+                <input 
+                    type="password" 
+                    placeholder="Password"
+                    name="password"
+                    id="password" 
+                    class="input-field"
+                    required
+                />
+                <button 
+                    id="submit"
+                    type="submit" 
+                    class="submit-button"
+                >
+                    Register
+                </button>
+                <span id="error-message" class="error-message"></span>
+            </form>
+            <p class="login-link">
+                Already have an account? <a href="login.html" class="link">Login</a>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

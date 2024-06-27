@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../assets/background.jpg" alt="" class="background-image">
+      <div class="form-wrapper">
+        <div class="form-header">
+          <span class="title">Restaurant</span>
+          <br />
+          <span class="subtitle">Login</span>
+        </div>
+        <form onSubmit="handleLogin(event)" class="form-content">
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            class="input-field"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+            class="input-field"
+            required
+          />
+          <button id="submit" type="submit" class="submit-button">Login</button>
+          <label class="remember-me">
+            <input type="checkbox" name="remember" checked="checked" /> Remember
+            me
+          </label>
+          <span id="login-error-message" class="error-message"></span>
+        </form>
+        <p class="login-link">
+          Forgot your password? <a href="#" class="link">Click here</a>
+        </p>
+        <p class="register-link">
+          Don't have an account? <a href="register.html" class="link">Register</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

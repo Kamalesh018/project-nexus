@@ -1,0 +1,378 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f8f8f8;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 80px; /* Adjust size as needed */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+.cta {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #c0392b;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #ccc;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* About Us Section */
+.about-us {
+    position: relative;
+    background: url('../assets/kitchen.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px; /* Add space on top */
+}
+
+.about-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto 30px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.chef {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Center content horizontally */
+    background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.chef img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.chef h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: black;
+}
+
+.chef p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: black; 
+}
+
+h3,p {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+
+/* Menu Highlights Section */
+.menu-highlights {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.menu-highlights h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.menu-item img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Location and Hours Section */
+.location-hours {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    
+}
+
+.location-hours h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Reservation Section */
+.reservation {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reservation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-items, .photo-gallery {
+        flex-direction: column;
+    }
+
+    .menu-item, .photo-gallery img {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
